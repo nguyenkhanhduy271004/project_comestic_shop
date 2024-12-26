@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    /* Đảm bảo header nổi trên các thành phần khác */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Tạo đổ bóng để header nổi bật */
+}
+
+.list-hot-product .product:hover,
+.list-sale-product .product:hover {
+    transform: translateY(-10px);
+    /* Nổi lên 10px khi hover */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    /* Tạo bóng đổ khi hover */
+    border-radius: 5px;
+}
+
+.list-hot-product,
+.list-sale-product {
+    display: flex;
+    overflow: hidden;
+    /* Ẩn các sản phẩm vượt quá chiều rộng */
+    gap: 20px;
+    /* Khoảng cách giữa các sản phẩm */
+    width: 100%;
+    /* Căn chỉnh theo chiều rộng container */
+}

@@ -1,0 +1,121 @@
+/* Phần giỏ hàng */
+.main-content-cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 850px;
+}
+
+/* Left cart (Danh sách sản phẩm) */
+.left-cart {
+    flex: 0 1 65%; /* Chiếm 65% diện tích */
+}
+
+.left-cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.left-cart table th,
+.left-cart table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.left-cart img {
+    width: 80px; /* Đặt kích thước cố định cho ảnh sản phẩm */
+    height: auto;
+}
+
+.left-cart input[type="number"] {
+    width: 50px; /* Điều chỉnh kích thước input cho số lượng */
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Xóa nút */
+.left-cart td[style*="cursor: pointer"] {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Right cart (Tóm tắt đơn hàng) */
+.right-cart {
+    flex: 0 1 30%; /* Chiếm 30% diện tích */
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.right-cart h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.right-cart .payment div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.right-cart input[type="text"] {
+    width: 70%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.right-cart button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.right-cart .total-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .main-content-cart {
+        flex-direction: column;
+    }
+
+    .left-cart,
+    .right-cart {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .left-cart table {
+        font-size: 14px;
+    }
+
+    .left-cart img {
+        width: 60px;
+    }
+
+    .right-cart .payment div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right-cart input[type="text"] {
+        width: 100%;
+    }
+
+    .right-cart button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

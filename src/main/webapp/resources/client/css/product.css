@@ -1,0 +1,251 @@
+/* ------------------Đây là css cho product ------------------ */
+
+.product {
+    width: calc(100% / 5);
+    /* Điều chỉnh chiều rộng của sản phẩm */
+    flex-shrink: 0;
+    /* Ngăn không cho sản phẩm bị co lại */
+}
+
+.product {
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.product-name {
+    display: block;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.product .feature {
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(244, 119, 140);
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    top: 10px;
+}
+
+.product a {
+    text-decoration: none;
+    color: black;
+}
+
+.product .product-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .product:hover {
+  transform: translateY(-5px);
+} */
+.detail-product span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-clamp: 2;
+    /* display: -webkit-box; */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 32px;
+    line-height: 16px;
+}
+
+.detail-product h6 {
+    text-align: center;
+    cursor: pointer;
+}
+
+.detail-product h6:hover {
+    text-decoration: underline;
+}
+
+.detail-product div {
+    margin: 0 16px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.list-hot-product .price span,
+.list-sale-product .price span {
+    white-space: nowrap;
+    line-height: 40px;
+    font-size: 15px;
+}
+
+.price sup {
+    font-size: 70%;
+    vertical-align: baseline;
+    color: #e65c00;
+}
+
+.addcart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-size: clamp(6px, 2vw, 16px);
+    padding: 5px 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.addcart:hover {
+    background-color: #ec8e4f;
+    /* Thay đổi màu khi hover */
+}
+
+.star-rating {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.star-rating li {
+    margin: 0 5px;
+}
+
+.star-rating a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.star-rating li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+
+.star-rating li a.filled {
+    color: #FFD700;
+}
+
+
+.show-all {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.show-all button {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.product .img-product {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.product .img-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product .img-product:hover img {
+    transform: scale(1.1);
+    /* Phóng to hình ảnh lên 10% khi hover */
+    /* border-radius: 10px; */
+}
+
+/* CSS cho nút "Xem ngay" */
+.product .show-now {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    /* Ban đầu nút nhỏ hơn */
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.product .img-product:hover .show-now {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-show-all {
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-show-all:hover {
+    background-color: #ff477e;
+    transform: scale(1.05);
+}
+
+.btn-show-all:active {
+    transform: scale(0.95);
+}
+
+.star-rating {
+    direction: ltr;
+    /* display: inline-flex; */
+}
+
+.star-rating .star {
+    font-size: 2em;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star-rating .star.selected,
+.star-rating .star:hover,
+.star-rating .star:hover~.star {
+    color: #ffcc00;
+}

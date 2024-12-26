@@ -1,0 +1,52 @@
+/* --------------HOT Product -----------*/
+.hot-selling-product .title {
+    text-align: center;
+    line-height: 80px;
+    height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu-hot-product {
+    position: relative;
+}
+.hot-selling-product .show-all {
+    margin-top: 30px;
+}
+.list-hot-product {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+/*carousel prev next*/
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem; /* Tăng kích thước của biểu tượng mũi tên */
+    color: black; /* Màu của mũi tên */
+    padding: 10px;
+}
+.carousel-button:hover {
+    color: gray; /* Đổi màu khi hover */
+}
+.carousel-button i {
+    pointer-events: none;
+}
+.nextSale,
+.next {
+    position: absolute;
+    right: 0;
+}
+.prevSale,
+.prev {
+    position: absolute;
+}
+.nextSale,
+.next,
+.prev,
+.prevSale {
+    top: 40%;
+    z-index: 2;
+}

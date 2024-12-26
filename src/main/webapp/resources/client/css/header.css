@@ -1,0 +1,170 @@
+.bg-gradient {
+    background: linear-gradient(90deg,
+            rgb(255, 212, 0) 0%,
+            rgb(199, 49, 48) 50.52%,
+            rgb(102, 54, 149) 99.61%) !important;
+}
+
+.sub-bg-gradient {
+    height: 5px;
+    background: linear-gradient(90deg,
+            rgb(255, 212, 0) 0%,
+            rgb(199, 49, 48) 50.52%,
+            rgb(102, 54, 149) 99.61%);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.menu-item {
+    white-space: nowrap;
+    /* Ngăn không cho xuống dòng */
+    color: white;
+}
+
+.separator {
+    /* width: 2px;
+    height: 2px; */
+    border-radius: 50px;
+    /* background-color: white; */
+}
+
+/* ---------<section class="nav-bar">------------- */
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+}
+
+.nav-bar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.nav-bar img {
+    width: 100%;
+}
+
+.search-box {
+    margin: 0 auto;
+}
+
+.search-form {
+    margin-right: auto;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    width: 25vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    background-color: rgb(235, 226, 226);
+}
+
+.search-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 9.5px 10px;
+    border-radius: 50px;
+    background-color: rgb(235, 226, 226);
+}
+
+.search-box .search-test {
+    border: none;
+    background: none;
+    outline: none;
+    width: 80%;
+    font-size: 15px;
+    margin-left: 20px;
+    padding: 10px 20px;
+}
+
+/* -------------- */
+.login-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+.login-store a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.fa-user,
+.fa-cart-shopping {
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    padding: 7px 10px;
+}
+
+.store {
+    position: relative;
+}
+
+.cart-count-badge {
+    position: absolute;
+    top: -10px;
+    right: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
+}
+
+/* -----<section class="menu-nav-bar">------ */
+.menu-nav-bar {
+    width: 100vw;
+    background-color: rgb(244, 119, 140);
+    height: 42px;
+}
+
+.menu-nav-bar .list-nav-bar {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    margin: 0 200px;
+    gap: 10px;
+}
+
+.menu-nav-bar .list-nav-bar li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-weight: bolder;
+    color: white;
+}
+
+.menu-nav-bar .list-nav-bar li:hover {
+    background-color: #d86d6d;
+    cursor: pointer;
+}

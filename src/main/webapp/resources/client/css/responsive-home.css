@@ -1,0 +1,265 @@
+/* =================== PC ==================== */
+@media (min-width: 992px) {}
+
+/* =================== tablets, landscape mode, small laptops ==================== */
+@media (max-width: 991.98px) {
+
+    /* 13. Sản phẩm */
+    .product {
+        min-width: 30%;
+    }
+
+    /* 14.  */
+    .hot-selling-product .title {
+        text-align: center;
+        font-size: clamp(16px, 32px);
+        /* Tối thiểu là 16px, tối đa là 32px */
+    }
+
+    .menu-nav-bar .list-nav-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+/* =================== tablets, portrait mode ==================== */
+@media (max-width: 768px) {
+
+    /* 1. chỉnh kích thước của button Thêm vào giỏ */
+    .addcart {
+        font-size: clamp(6px, 2vw, 12px);
+    }
+}
+
+@media (min-width: 576.02px) {
+
+    .cart--mobile,
+    .menu-mobile-icon,
+    .menu-drawer,
+    .search-form-mobile {
+        display: none !important;
+    }
+}
+
+/* =================== mobile ==================== */
+
+@media (max-width: 576px) {
+
+    /* 1. Ẩn đi menu-nav-bar */
+    .menu-nav-bar {
+        display: none;
+    }
+
+    /* 2. Chỉnh lại vị trí logo và search */
+    .nav-bar {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar .logo {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        width: 100vw;
+        padding: 20px 0px;
+    }
+
+    /* 3. đưa carousel ra full chiều rộng */
+    .set-carousel .container {
+        width: 100%;
+    }
+
+    /* 4. */
+    .hot-selling-product .title {
+        text-align: center;
+        font-size: clamp(8px,
+                16px) !important;
+        /* Tối thiểu là 16px, tối đa là 32px */
+    }
+
+    /* 13. Sản phẩm */
+    .product {
+        min-width: 47%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    body {
+        min-width: 200px;
+    }
+
+    /* 14 carousel */
+    .set-carousel {
+        padding-top: 160px !important;
+    }
+
+    /* Ẩn cột thứ 2 và set lại chiều rộng cho cột 1 */
+    .column2 {
+        display: none;
+    }
+
+    .column1 {
+        width: 94.5vw;
+    }
+
+    /* 15. set cỡ chữ cho title */
+    .hot-selling-product .title {
+        font-size: clamp(6px, 4vw, 32px);
+    }
+
+    /* 16. chỉnh kích thước của button Thêm vào giỏ */
+    .addcart {
+        font-size: clamp(6px, 2vw, 12px);
+    }
+
+    /* 17. Chỉnh kích thước button show-all */
+    .show-all button {
+        max-width: 120px;
+        min-height: 3px;
+        font-size: clamp(10px, 2vw, 16px);
+    }
+
+    /* 18. set chiều rộng carousel */
+    .set-carousel .container {
+        height: 200px;
+    }
+
+    .set-carousel .container img {
+        height: 200px;
+    }
+
+    .set-carousel .container .carousel-indicators {
+        bottom: -12px;
+    }
+
+    /* 19. overlay */
+    .menu-overlay {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.3);
+        inset: 0;
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    /* 20. Kiểm menu-checkbox có được check hiện overlay */
+    .menu-checkbox:checked~.menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* 21. code cho menu drawer */
+    .menu-drawer {
+        position: fixed;
+        background-color: white;
+        inset: 0 0 0 0;
+        z-index: 2;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+
+    /* 22. nếu menu-checkbox ở trạng trái checked */
+    .menu-checkbox:checked~.menu-drawer {
+        transform: translateX(0);
+    }
+
+    /* 23. menu top */
+    .close__menu {
+        width: 5vw;
+        color: #fff;
+        padding-right: 2px;
+    }
+
+    .menu-drawer__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* 24 */
+    #navbar__list--mobile li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #navbar__list--mobile {
+        padding: 20px;
+        margin: 0;
+    }
+
+    #navbar__list--mobile a {
+        list-style-type: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* 25 */
+    .menu-mobile-icon {
+        width: 15vw;
+        padding: 30%;
+    }
+
+    /*    26*/
+    .img_logo {
+        height: 100px !important;
+    }
+
+    .search-form-mobile {
+        width: 50vw;
+    }
+
+    /*    features*/
+    .container .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .featurs-item {
+        padding: 15px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .featurs-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .featurs-content h5 {
+        font-size: 14px;
+    }
+
+    .featurs-content p {
+        font-size: 12px;
+    }
+
+    /*    footer*/
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .footer-section h3 {
+        font-size: 16px;
+    }
+
+    .footer-section ul li a,
+    .footer-section p {
+        font-size: 13px;
+    }
+}

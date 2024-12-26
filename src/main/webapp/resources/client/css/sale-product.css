@@ -1,0 +1,62 @@
+/* ------------Sale product------------ */
+.main-sale {
+    position: relative;
+}
+.sale .container {
+    min-height: auto;
+    border-radius: 20px;
+    background-color: rgb(244, 119, 140);
+}
+.sale .header-sale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+.sale .header-sale img {
+    width: 30vw;
+}
+.sale .list-sale-product {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+.sale .product {
+    /* width: 220px; */
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem; /* Tăng kích thước của biểu tượng mũi tên */
+    color: black; /* Màu của mũi tên */
+    padding: 10px;
+}
+.carousel-button:hover {
+    color: gray; /* Đổi màu khi hover */
+}
+.carousel-button i {
+    pointer-events: none;
+}
+.nextSale,
+.next {
+    position: absolute;
+    right: 0;
+}
+.prevSale,
+.prev {
+    position: absolute;
+}
+.nextSale,
+.next,
+.prev,
+.prevSale {
+    top: 40%;
+    z-index: 2;
+}

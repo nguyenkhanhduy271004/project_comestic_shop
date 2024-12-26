@@ -1,0 +1,23 @@
+.container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.set-carousel .container {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 68.5% 30%;
+    gap: 1.5%;
+}
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+.column2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+#carouselExampleIndicators {
+    z-index: 0;
+}
