@@ -67,8 +67,13 @@ The **CosmeticShop** is an e-commerce platform for cosmetics, built with Spring 
 Clone the repository from GitHub to your local machine.
 
 git clone https://github.com/nguyenkhanhduy271004/web-final
-Step 2: Configure Database
-Create a MySQL database for the project.
+
+pgsql
+Sao chép
+Chỉnh sửa
+
+### Step 2: Configure Database
+Create a MySQL database for the project.  
 Configure the application.properties or application.yml file with your database credentials.
 
 spring.datasource.url=jdbc:mysql://localhost:3306/cosmeticshop
@@ -76,75 +81,113 @@ spring.datasource.username=root
 spring.datasource.password=123456
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-Step 3: Build the Project
+
+vbnet
+Sao chép
+Chỉnh sửa
+
+### Step 3: Build the Project
 Navigate to the project directory and build the project using Maven.
 
 mvn clean install
-Step 4: Run the Application
+
+csharp
+Sao chép
+Chỉnh sửa
+
+### Step 4: Run the Application
 Run the application via the Spring Boot Maven plugin or by running the main class.
 
 mvn spring-boot:run
+
+sql
+Sao chép
+Chỉnh sửa
+
 For Spring MVC without Spring Boot:
 
 mvn tomcat7:run
-Step 5: Access the Application
+
+pgsql
+Sao chép
+Chỉnh sửa
+
+### Step 5: Access the Application
 Once the server is running, you can access the application in your browser.
 
 http://localhost:8080
-Database Schema
+
+markdown
+Sao chép
+Chỉnh sửa
+
+## Database Schema
 Here is the basic structure for the CosmeticShop application:
 
-Tables:
-Users: Stores user information such as name, email, password (hashed), role (guest, user, vendor, admin), and OTP details.
-Products: Stores product information such as name, description, price, stock, and associated shop.
-Orders: Stores order details, including order status (new, confirmed, shipped, delivered, canceled, or returned).
-Categories: Stores product categories.
-Reviews: Stores product reviews and ratings.
-Discounts: Stores discount codes and campaigns.
-Shops: Stores vendor shops information (name, address, etc.).
-Shipping Partners: Stores information about shipping providers and fees.
-API Endpoints
-Authentication & Authorization
-POST /api/auth/register: Register a new user and send OTP to email.
-POST /api/auth/login: Login with email and password.
-POST /api/auth/forgot-password: Send OTP for password recovery.
-POST /api/auth/verify-otp: Verify OTP for account or password recovery.
-Products
-GET /api/products: Fetch products (with pagination).
-GET /api/products/{id}: Fetch product details by ID.
-GET /api/products/search: Search products by name, category, price range, etc.
-Orders
-POST /api/orders: Place an order (user).
-GET /api/orders: View orders (user/vendor/admin).
-PUT /api/orders/{id}/status: Update order status (vendor/admin).
-GET /api/orders/{id}: View specific order details.
-Cart & Checkout
-GET /api/cart: View cart (user).
-POST /api/cart: Add items to the cart (user).
-DELETE /api/cart/{id}: Remove item from the cart (user).
-POST /api/checkout: Proceed with checkout (user).
-Vendor Features
-POST /api/vendor/shop: Register a new shop.
-POST /api/vendor/product: Add a new product.
-GET /api/vendor/orders: View vendor’s orders.
-How to Run Tests
+### Tables:
+- **Users**: Stores user information such as name, email, password (hashed), role (guest, user, vendor, admin), and OTP details.
+- **Products**: Stores product information such as name, description, price, stock, and associated shop.
+- **Orders**: Stores order details, including order status (new, confirmed, shipped, delivered, canceled, or returned).
+- **Categories**: Stores product categories.
+- **Reviews**: Stores product reviews and ratings.
+- **Discounts**: Stores discount codes and campaigns.
+- **Shops**: Stores vendor shops information (name, address, etc.).
+- **Shipping Partners**: Stores information about shipping providers and fees.
+
+## API Endpoints
+
+### Authentication & Authorization
+- **POST /api/auth/register**: Register a new user and send OTP to email.
+- **POST /api/auth/login**: Login with email and password.
+- **POST /api/auth/forgot-password**: Send OTP for password recovery.
+- **POST /api/auth/verify-otp**: Verify OTP for account or password recovery.
+
+### Products
+- **GET /api/products**: Fetch products (with pagination).
+- **GET /api/products/{id}**: Fetch product details by ID.
+- **GET /api/products/search**: Search products by name, category, price range, etc.
+
+### Orders
+- **POST /api/orders**: Place an order (user).
+- **GET /api/orders**: View orders (user/vendor/admin).
+- **PUT /api/orders/{id}/status**: Update order status (vendor/admin).
+- **GET /api/orders/{id}**: View specific order details.
+
+### Cart & Checkout
+- **GET /api/cart**: View cart (user).
+- **POST /api/cart**: Add items to the cart (user).
+- **DELETE /api/cart/{id}**: Remove item from the cart (user).
+- **POST /api/checkout**: Proceed with checkout (user).
+
+### Vendor Features
+- **POST /api/vendor/shop**: Register a new shop.
+- **POST /api/vendor/product**: Add a new product.
+- **GET /api/vendor/orders**: View vendor’s orders.
+
+## How to Run Tests
 The project includes unit tests for the core features. To run the tests, use the following Maven command:
 
 mvn test
-Tests are located in the src/test/java directory.
 
-Contributing
+sql
+Sao chép
+Chỉnh sửa
+
+Tests are located in the `src/test/java` directory.
+
+## Contributing
 We welcome contributions to CosmeticShop! To contribute, please follow these steps:
 
-Fork the repository.
-Create a feature branch (git checkout -b feature-name).
-Commit your changes (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-name).
-Submit a pull request.
-License
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Submit a pull request.
+
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Conclusion
+## Conclusion
 This CosmeticShop platform is a full-fledged e-commerce solution built using modern Java technologies. It provides a rich set of features for both users and vendors, with an intuitive interface for easy management of products, orders, and payments. If you have any questions or need help setting up the project, feel free to open an issue on GitHub.
 
 Happy coding!
