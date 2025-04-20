@@ -66,14 +66,11 @@ The **CosmeticShop** is an e-commerce platform for cosmetics, built with Spring 
 ### Step 1: Clone the Repository
 Clone the repository from GitHub to your local machine.
 
-```bash
 git clone https://github.com/nguyenkhanhduy271004/web-final
 Step 2: Configure Database
 Create a MySQL database for the project.
 Configure the application.properties or application.yml file with your database credentials.
 
-properties
-Sao chép mã
 spring.datasource.url=jdbc:mysql://localhost:3306/cosmeticshop
 spring.datasource.username=root
 spring.datasource.password=123456
@@ -82,25 +79,17 @@ spring.jpa.show-sql=true
 Step 3: Build the Project
 Navigate to the project directory and build the project using Maven.
 
-bash
-Sao chép mã
 mvn clean install
 Step 4: Run the Application
 Run the application via the Spring Boot Maven plugin or by running the main class.
 
-bash
-Sao chép mã
 mvn spring-boot:run
 For Spring MVC without Spring Boot:
 
-bash
-Sao chép mã
 mvn tomcat7:run
 Step 5: Access the Application
 Once the server is running, you can access the application in your browser.
 
-bash
-Sao chép mã
 http://localhost:8080
 Database Schema
 Here is the basic structure for the CosmeticShop application:
@@ -141,8 +130,6 @@ GET /api/vendor/orders: View vendor’s orders.
 How to Run Tests
 The project includes unit tests for the core features. To run the tests, use the following Maven command:
 
-bash
-Sao chép mã
 mvn test
 Tests are located in the src/test/java directory.
 
@@ -161,13 +148,3 @@ Conclusion
 This CosmeticShop platform is a full-fledged e-commerce solution built using modern Java technologies. It provides a rich set of features for both users and vendors, with an intuitive interface for easy management of products, orders, and payments. If you have any questions or need help setting up the project, feel free to open an issue on GitHub.
 
 Happy coding!
-
-less
-Sao chép mã
-
-### Những thay đổi tôi đã thực hiện:
-1. Đảm bảo các tiêu đề (`##`) được sử dụng đúng để phân tách các mục chính.
-2. Sử dụng dấu ba gạch chéo (```bash```) cho các ví dụ mã lệnh, giúp dễ nhìn và phân biệt với phần văn bản.
-3. Đảm bảo có khoảng cách giữa các mục để dễ đọc.
-
-Hy vọng rằng với những thay đổi này, `README.md` của bạn sẽ hiển thị đúng trên GitHub.
