@@ -68,10 +68,6 @@ Clone the repository from GitHub to your local machine.
 
 git clone https://github.com/nguyenkhanhduy271004/web-final
 
-pgsql
-Sao chép
-Chỉnh sửa
-
 ### Step 2: Configure Database
 Create a MySQL database for the project.  
 Configure the application.properties or application.yml file with your database credentials.
@@ -82,44 +78,25 @@ spring.datasource.password=123456
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
-vbnet
-Sao chép
-Chỉnh sửa
-
 ### Step 3: Build the Project
 Navigate to the project directory and build the project using Maven.
 
 mvn clean install
 
-csharp
-Sao chép
-Chỉnh sửa
 
 ### Step 4: Run the Application
 Run the application via the Spring Boot Maven plugin or by running the main class.
 
 mvn spring-boot:run
 
-sql
-Sao chép
-Chỉnh sửa
-
 For Spring MVC without Spring Boot:
 
 mvn tomcat7:run
-
-pgsql
-Sao chép
-Chỉnh sửa
 
 ### Step 5: Access the Application
 Once the server is running, you can access the application in your browser.
 
 http://localhost:8080
-
-markdown
-Sao chép
-Chỉnh sửa
 
 ## Database Schema
 Here is the basic structure for the CosmeticShop application:
@@ -168,10 +145,6 @@ Here is the basic structure for the CosmeticShop application:
 The project includes unit tests for the core features. To run the tests, use the following Maven command:
 
 mvn test
-
-sql
-Sao chép
-Chỉnh sửa
 
 Tests are located in the `src/test/java` directory.
 
